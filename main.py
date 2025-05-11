@@ -12,7 +12,7 @@ def home():
     return f.render_template("index.html")
 
 
-@app.route("/predict",method=["POST"])
+@app.route("/predict",methods=["POST"])
 
 def predict():
     A=[]
