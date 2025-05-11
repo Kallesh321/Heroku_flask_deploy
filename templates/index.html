@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Profit Prediction app</h2>
+
+<form action="/predict" method ="POST">
+  <label for="RND">Amount spend in RND:</label><br>
+  <input type="text" id="RND" name="RND" value="0-300000"><br>
+  <label for="MKT">Amount spend in MKT:</label><br>
+  <input type="text" id="MKT" name="MKT" value="0-30000"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+{{ pred }}
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+
+
+</body>
+</html>
