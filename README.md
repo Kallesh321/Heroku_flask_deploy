@@ -1,0 +1,1 @@
+# This is used to deploy the application to heroku via git and flask web app
