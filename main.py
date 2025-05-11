@@ -1,10 +1,10 @@
-from pickle import flask
+from pickle import load
 import flask as f
 from pandas import DataFrame
 
 
 app = f.Flask(__name__)
-model = load(dump("model.pkl","rb"))
+model = load(open("model.pkl","rb"))
 
 
 @app.route("/")
